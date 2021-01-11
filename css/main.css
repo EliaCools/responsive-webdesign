@@ -51,9 +51,9 @@ h2{color:black}
     background-color:#88BB88;
   }
 
-  #title-small,#title-large {display:none;}
+  #title-small{display:none;}
   #title-medium{display:block;}
-
+  #title-large {display:none;}
 
   [id*=col-]{
     color:#333333;
@@ -62,9 +62,7 @@ h2{color:black}
   }
 
   #col-1{width:64%;}
-
   #col-2{width:31%;}
-
   #col-3{width:100%;}
 
 
@@ -78,7 +76,8 @@ h2{color:black}
     background-color: #114499;
   }
 
-  #title-small #title-medium {display:none;}
+  #title-small {display:none;}
+  #title-medium {display:none;}
 
   #title-large {
     display: block;
@@ -87,9 +86,13 @@ h2{color:black}
   [id*=col-] {
     color: white;
     font-size: 20px;
-    width: 31%;
 
   }
+
+  #col-1{width:31%;}
+  #col-2{width:31%;}
+  #col-3{width:31%;}
+
 }
 
 
