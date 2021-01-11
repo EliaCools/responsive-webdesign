@@ -1,0 +1,119 @@
+body{
+  background-color:red;
+  max-width:95vw;
+  margin:0 auto;
+  padding:0;
+
+}
+
+
+
+h1
+{
+  font-family: 'Arvo', serif;
+
+}
+
+/* I read online that should not be used for layout styling, is this true? */
+#flex-container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:flex-start;
+}
+
+
+
+[id*="col-"]{width:100%; border-left:1px solid black; margin:1vh 0; padding:0 1%;}
+
+
+[id*="title-"]{width:100%; text-align:center;}
+
+h2{color:black}
+
+
+
+#title-small{display:block;}
+#title-medium{display:none;}
+#title-large{display:none;}
+
+
+
+
+/* medium screen */
+
+@media only screen and (min-width:300px){
+
+  body{
+    background-color:#88BB88;
+  }
+
+
+
+  #title-small{display:none;}
+  #title-medium{display:block;}
+  #title-large{display:none;}
+
+  [id*=col-]{color:#333333; padding:0 1%;}
+
+  #col-1{
+
+    font-size:20px;
+
+
+    width:64%;
+
+  }
+
+  #col-2{
+
+    font-size:20px;
+
+
+    width:31%;
+
+  }
+
+  #col-3{
+
+    font-size:20px;
+
+
+    width:100%;
+
+  }
+
+
+}
+
+/*large screen */
+
+@media only screen and (min-width:768px){
+
+  body{
+    background-color:#114499;
+  }
+
+  #title-small{display:none;}
+  #title-medium{display:none;}
+  #title-large{display:block;}
+
+[id*=col-]{color:white;}
+
+
+  #col-1{
+    font-size:20px;
+    width:31%;
+  }
+
+  #col-2{
+    font-size:20px;
+    width:31%;
+  }
+
+  #col-3{
+    font-size:20px;
+    width:31%;
+  }
+
+}
